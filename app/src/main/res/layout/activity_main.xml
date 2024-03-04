@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:text="@string/store_water_resource_details"/>
+
+
+    <EditText
+        android:id="@+id/resourceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/water_resource_name"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/location"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/type"
+        android:importantForAutofill="no" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:padding="4dip"
+        android:text="@string/add" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/tableLayout"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:text="@string/water_resource_name"
+                android:textStyle="bold"
+                android:padding="3dip"/>
+            <TextView
+                android:text="@string/location"
+                android:textStyle="bold"
+                android:padding="3dip"/>
+            <TextView
+                android:text="@string/type"
+                android:textStyle="bold"
+                android:padding="3dip"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
